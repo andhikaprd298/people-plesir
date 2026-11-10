@@ -10,7 +10,7 @@ import './styles/global.css';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <<BrowserRouter basename="/people-plesir"></>>
+    <BrowserRouter basename={import.meta.env.BASE_URL.replace(/\/$/, '')}>
       <ToastProvider>
         <AuthProvider>
           <App />
