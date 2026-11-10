@@ -3,6 +3,9 @@
   "private": true,
   "version": "0.1.0",
   "description": "People Plesir — platform perencanaan wisata Kabupaten Banyumas",
+  "engines": {
+  "node": "22.x"
+},
   "workspaces": ["server", "client"],
   "scripts": {
     "dev": "concurrently -n api,web -c green,yellow \"npm run dev -w server\" \"npm run dev -w client\"",
